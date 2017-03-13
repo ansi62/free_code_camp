@@ -1,0 +1,207 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+  font-family: 'Droid Serif', serif;
+  color: lightgrey;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 20px;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.tiny-txt {
+    font-size: 2.3px;
+}
+
+#logo {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 1.25;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    fill: #000000;
+    fill-opacity: 1;
+    stroke: none;
+    stroke-width: 0.26458332;
+}
+
+.green-btn-normal {
+    fill: #090;
+    stroke: #090;
+    fill-opacity: 1;
+    stroke-width:5.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+}
+
+.green-btn-normal:hover {
+    fill: #0a0;
+}
+
+.green-btn-pressed {
+    fill: #0f0;
+    stroke: #0f0;
+}
+
+.red-btn-normal {
+    fill: #900;
+    stroke: #900;
+    fill-opacity: 1;
+    stroke-width:5.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+}
+
+.red-btn-normal:hover {
+    fill: #a00;
+}
+
+.red-btn-pressed {
+    fill: #f00;
+    stroke: #f00;
+}
+
+.blue-btn-normal {
+    fill: #009;
+    stroke: #009;
+    fill-opacity: 1;
+    stroke-width:5.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+}
+
+.blue-btn-normal:hover {
+    fill: #00a;
+}
+
+.blue-btn-pressed {
+    fill: #00f;
+    stroke: #00f;
+}
+
+.yellow-btn-normal {
+    fill: #990;
+    stroke: #990;
+    fill-opacity: 1;
+    stroke-width:5.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+}
+
+.yellow-btn-normal:hover {
+    fill: #aa0;
+}
+
+.yellow-btn-pressed {
+    fill: #ff0;
+    stroke: #ff0;
+}
+
+#presses {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4px;
+    line-height: 1.25;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    fill: #ff0000;
+    fill-opacity: 1;
+    stroke: none;
+}
+
+.led-off {
+    fill: #700;
+    fill-opacity: 1;
+    stroke: none;
+}
+
+.led-on {
+    fill: #f00;
+}
+
+.onoff-btn-off {
+    x: 46;
+    fill: #000000;
+    fill-opacity: 1;
+    stroke: #0000ff;
+    stroke-width: 0.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+}
+
+.onoff-btn-on {
+    x: 50;
+}
+
+.restart-btn {
+    fill: #088;
+    fill-opacity: 1;
+    stroke: #055;
+    stroke-width: 0.6;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
+}
+
+.restart-btn-on {
+    stroke: #0ff;
+}
+
+.strict-btn-stopped {
+    fill: #a40;
+    fill-opacity: 1;
+    stroke: #640;
+    stroke-width: 0.6;
+    stroke-miterlimit: 4;
+    stroke-dasharray: none;
+    stroke-opacity: 1;
+}
+
+.strict-btn-started {
+    stroke: #f40;
+}
+
+a, a:active, a:visited {
+    color: coral;
+}
+
+a:hover {
+    color: lime;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}

@@ -1,0 +1,93 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+  font-family: 'Droid Serif', serif;
+  color: lightgrey;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 20px;
+}
+
+img {
+    border: 0px;
+}
+
+#picker, #ttt {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: black;
+    width: 312px;
+    height: 312px;
+}
+
+#picker {
+        padding-top: 108px;
+        border: 8px solid lime;
+        border-radius: 30px;
+        display:inline-block;
+}
+
+#ttt {
+    display: none;
+}
+
+#pickX:hover, #pickO:hover {
+    cursor: pointer;
+}
+
+#pickO {
+    margin-left: 6%;
+}
+
+.btn-ttt {
+    width:100px;
+    height: 100px;
+    color: yellow;
+    background-color: coral;
+    margin: 2px;
+    padding: 0px;
+    outline: 0 !important;
+}
+
+#btn-reset {
+    background-color: black;
+    border: 2px solid darkgrey;
+    border-radius: 6px;
+    padding: 10px;
+    color: yellow;
+    outline: 0 !important;
+    box-shadow: 2px 2px lightgrey;
+    visibility: hidden;
+}
+
+#btn-reset:active {
+    box-shadow: 1px 1px lightgrey;
+    transform: translateX(1px) translateY(1px);
+}
+
+#status-bar {
+    color: white;
+    font-size: 2em;
+    height: 40px;
+}
+
+a, a:active, a:visited {
+    color: coral;
+}
+
+a:hover {
+    color: lime;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}

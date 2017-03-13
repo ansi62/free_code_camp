@@ -1,0 +1,43 @@
+body {
+    font-size: 14px;
+    background-color: black;
+    font-family: 'Droid Serif', serif;
+    padding: 50px;
+    color: lightgrey;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+ol {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    text-align: left;
+}
+
+a, a:active, a:hover, a:visited {
+    color: coral;
+    font-size: 1.4em;
+}
+
+footer a, footer a:active, footer a:visited {
+    color: coral;
+    font-size: inherit;
+}
+
+footer a:hover {
+    color: lime;
+    font-size: inherit;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}

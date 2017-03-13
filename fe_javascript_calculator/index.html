@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Expires" content="-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>JavaScript Calculator</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+        <script src="bignumber.min.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <h1 class="text-center">JavaScript Calculator</h1>
+        <h3 class="text-center"><em>a Free Code Camp project</em></h3>
+
+        <div class="container">
+            <div id="arrow-right"></div>
+            <div id="arrow-left"></div>
+            <div class="row" style="display: inline-block;">
+                <div class="col-sm-6">
+                    <div id="calculator">
+                        <table>
+                            <tr>
+                                <td id="logo" colspan="4">JAVASCRIPT CALCULATOR</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div id="out">
+                                        <div id="oper">0</div>
+                                        <div id="disp">0</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><button id="ac" class="btspec">AC</button></td>
+                                <td><button id="ce" class="btspec">CE</button></td>
+                                <td><button id="divide" class="btnum">&div;</button></td>
+                                <td><button id="multiply" class="btnum">&times;</button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="seven" class="btnum">7</button></td>
+                                <td><button id="eight" class="btnum">8</button></td>
+                                <td><button id="nine" class="btnum">9</button></td>
+                                <td><button id="minus" class="btnum">-</button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="four" class="btnum">4</button></td>
+                                <td><button id="five" class="btnum">5</button></td>
+                                <td><button id="six" class="btnum">6</button></td>
+                                <td><button id="plus" class="btnum">+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="one" class="btnum">1</button></td>
+                                <td><button id="two" class="btnum">2</button></td>
+                                <td><button id="three" class="btnum">3</button></td>
+                                <td rowspan="2"><button id="equal" class="btnum">=</button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button id="zero" class="btnum">0</button></td>
+                                <td><button id="dot" class="btnum">.</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="roll">0</div>
+                </div>
+            </div>
+            <div>Double AC to clear roll</div>
+        </div>
+
+        <footer>Andes Signorelli - GitHub repositories:<br>
+            javascript calculator project at <a href="https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_javascript_calculator">
+                https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_javascript_calculator</a><br>
+            Free Code Camp projects at <a href="https://github.com/ansi62/free_code_camp">
+                https://github.com/ansi62/free_code_camp</a>
+        </footer>
+
+        <script src="include.js"></script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  color: lightgrey;
+  background-color: black;
+  font-family: 'Droid Serif', serif;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+a, a:active, a:visited {
+    color: coral;
+}
+
+a:hover {
+    color: lime;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+#box {
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px;
+  display: inline-block;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+}
+
+#quote_text {
+  font-size: 2em;
+}
+
+#quote_author {
+  font-size: 1.5em;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+#next_quote {
+    outline: 0 !important;
+}
+
+#tw {
+  margin-top: 30px;
+  font-size: 2em;
+}
+
+#tw_uri, #tw_uri:active, #tw_uri:visited {
+    color: blue;
+}
+
+#tw_uri:hover {
+    color: cyan;
+}

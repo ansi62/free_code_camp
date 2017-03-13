@@ -1,0 +1,113 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+  font-family: 'Droid Serif', serif;
+  padding: 0px;
+  color: lightgrey;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 20px;
+}
+
+a, a:active, a:visited {
+    color: coral;
+}
+
+a:hover {
+    color: lime;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+#clock {
+    font-family: 'Anonymous Pro', serif;
+    font-size: 5em;
+    background-color: black;
+    border: 10px solid rgb(220, 0, 0);
+    width: 288px;
+    height: 288px;
+    border-radius: 50%;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    z-index: 400;
+    outline: 0 !important;
+    background-image: url('pomodori-rossi.png');
+    background-position: center;
+}
+
+.vertical-stretch {
+    transform: scaleY(1.4);
+}
+
+#clock-text {
+    transform: scaleY(2);
+    color: white;
+    line-height: 270px;
+    vertical-align: middle;
+}
+
+.vertical-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.clock-frame {
+    border: 16px solid yellow;
+    border-radius: 200px;
+    margin: 20px auto 20px auto;
+    padding: 10px;
+    display: inline-block;
+}
+
+.group {
+    width: 162px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-symbol, .btn-word {
+    color: white;
+    background-color: green;
+    border: 1px solid lime;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    font-size: 1em;
+    box-shadow: 2px 2px lightgrey;
+    outline: 0 !important;
+    z-index: 500;
+}
+.btn-symbol:active, .btn-word:active {
+    box-shadow: 1px 1px lightgrey;
+    transform: translateX(1px) translateY(1px);
+}
+.btn-word {
+    width: 100px;
+    margin: 4px;
+}
+.btn-symbol:disabled, .btn-word:disabled {
+    background-color: grey;
+    border-color: green;
+}
+
+.minutes {
+    display: inline-block;
+    width: 70px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 2.4em;
+    color: lime;
+    vertical-align: middle;
+}

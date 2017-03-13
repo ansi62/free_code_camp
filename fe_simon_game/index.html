@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Expires" content="-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Simon game</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1 class="text-center">Simon game</h1>
+        <h3 class="text-center"><em>A Free Code Camp project</em></h3>
+
+        <svg id="svg-simon" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg" version="1.1"
+                viewBox="0 0 100 100" height="100mm" width="100mm">
+        <g id="layer1" transform="translate(0,-197)" class="disabled">
+            <circle id="circle" r="40" cy="247.61111" cx="49.741669"
+                transform="matrix(1.1133041,0,0,1.1133041,-5.6182965,-28.161195)"
+                style="fill:#cccccc;fill-opacity:1;stroke-width:0.26458332;" />
+            <path id="blue-btn" class="blue-btn-normal"
+                d="m 86.437077,252.50746 h -15.43438 c 0.18438,8.4172 -7.640291,15.46124 -15.772684,15.91257 -0.15711,0.0225 -0.31297,0.04 -0.46853,0.057 v 15.70604 a 31.675581,31.675581 0 0 0 31.675594,-31.67559 z" />
+            <path id="red-btn" class="red-btn-normal"
+                d="m 54.761483,210.82749 v 15.43438 c 8.4172,-0.18438 15.461241,7.64029 15.912577,15.77268 0.02251,0.15711 0.04004,0.31297 0.05698,0.46853 H 86.437079 A 31.675581,31.675581 0 0 0 54.761483,210.82749 Z" />
+            <path id="green-btn" class="green-btn-normal"
+                d="m 13.081543,242.50309 h 15.43438 c -0.18438,-8.4172 7.64029,-15.46124 15.77268,-15.91257 0.15711,-0.0225 0.31297,-0.04 0.46853,-0.057 v -15.70604 a 31.675581,31.675581 0 0 0 -31.67559,31.67559 z" />
+            <path id="yellow-btn" class="yellow-btn-normal"
+                d="m 44.518633,284.24543 v -15.43438 c -8.4172,0.18438 -15.46124,-7.64029 -15.91257,-15.77268 -0.0225,-0.15711 -0.04,-0.31297 -0.057,-0.46853 h -15.70604 a 31.675581,31.675581 0 0 0 31.67559,31.67559 z" />
+            <text id="restart-btn-txt" y="254.4" x="46.8" class="tiny-txt" xml:space="preserve">RESTART</text>
+            <circle id="restart-btn" r="4" cy="247.5" cx="52" class="restart-btn" />
+            <text id="strict-btn-txt" y="254.4" x="58" class="tiny-txt" xml:space="preserve">STRICT</text>
+            <circle id="strict-btn" r="4" cy="247.5" cx="62" class="strict-btn-stopped" />
+            <text id="logo" y="241" x="34" xml:space="preserve">Simon</text>
+            <rect id="bg-presses" y="244" x="33" height="7" width="12"
+                style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36415547;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+            <text id="presses" y="249" x="36.8" xml:space="preserve">--</text>
+            <text id="presses-txt" y="254.4" x="33.5" class="tiny-txt" xml:space="preserve">PRESSESS</text>
+            <circle id="led" r="1" cy="257" cx="50" class="led-off" />
+            <text id="onoff-btn-txt1" y="261.5" x="39.5" class="tiny-txt" xml:space="preserve">OFF</text>
+            <text id="onoff-btn-txt2" y="261.5" x="56" class="tiny-txt" xml:space="preserve">ON</text>
+        </g>
+        <g id="layer2" transform="translate(0,-197)">
+            <rect id="hghghg" y="259" x="45" height="4" width="10"
+                style="fill:#000000;fill-opacity:1;stroke:#0000ff;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+            <rect id="onoff-btn" y="260" height="2" width="4" class="onoff-btn-off" />
+        </g>
+        </svg>
+
+        <footer>Andes Signorelli - GitHub repositories:<br>
+            Simon game project at <a href="https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_simon_game">
+                https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_simon_game</a><br>
+            Free Code Camp projects at <a href="https://github.com/ansi62/free_code_camp">
+                https://github.com/ansi62/free_code_camp</a>
+        </footer>
+
+        <audio id="blue-btn-sound" src="simonSound1.mp3"></audio>
+        <audio id="red-btn-sound" src="simonSound2.mp3"></audio>
+        <audio id="green-btn-sound" src="simonSound3.mp3"></audio>
+        <audio id="yellow-btn-sound" src="simonSound4.mp3"></audio>
+        <audio id="error-sound" src="Sad_Trombone.mp3"></audio>
+        <audio id="win-sound" src="crowdapplause1.mp3"></audio>
+
+        <script src="include.js"></script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Local weather</title>
+  </head>
+  <body>
+    <h1>Local weather</h1>
+    <h3 class="text-center"><em>A Free Code Camp project</em></h3>
+
+    <p id="locality" class="data"></p>
+    <p class="data"><span id="temp"></span>&deg;<a id="type" href="#">C</a></p>
+    <p id="weather" class="data"></p>
+    <p><img id="icon" src="#"></img></p>
+    <p>(* If the page doesn't show correctly, please check if your browser is blocking javascript. *)</p>
+
+    <footer>Andes Signorelli - GitHub repositories:<br>
+        local weather at <a href="https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_local_weather">
+            https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_local_weather</a><br>
+        Free Code Camp projects at <a href="https://github.com/ansi62/free_code_camp">
+            https://github.com/ansi62/free_code_camp</a>
+    </footer>
+  </body>
+  <script>
+    $(document).ready(function() {
+
+      if (navigator.geolocation) {
+        var uri = "";
+        var celsius = 0;
+        var fahrenheit = 0;
+        var typeCelsius = true;
+
+        navigator.geolocation.getCurrentPosition(function(position) {
+          uri = "http://api.openweathermap.org/data/2.5/weather?callback=?&lat=" + position.coords.latitude +
+                "&lon=" + position.coords.longitude + "&units=metric&lang=it&APPID=83aa7f84f461e44a0006b9c4356738d8";
+
+          $.getJSON(uri, function(data, textStatus, jqXHR) {
+              $("#locality").html(data.name + " (" + data.sys.country + ")");
+              $("#tmp").html(JSON.stringify(data));
+              celsius = Math.round(data.main.temp);
+              fahrenheit = Math.round((data.main.temp * 9 / 5) + 32);
+              $("#temp").html(celsius);
+              $("#weather").html(data.weather[0].main + " (" + data.weather[0].description + ")");
+              $("#icon").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
+          });
+        });
+      } else {
+        $("#tmp").html("Your browser doesn't support geolocation");
+      }
+
+      $("#type").click(function() {
+        if (typeCelsius) {
+          $("#temp").html(fahrenheit);
+          $("#type").html("F");
+          typeCelsius = false;
+        } else {
+          $("#temp").html(celsius);
+          $("#type").html("C");
+          typeCelsius = true;
+        }
+      });
+    });
+  </script>
+</html>

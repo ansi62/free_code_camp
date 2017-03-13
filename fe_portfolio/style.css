@@ -1,0 +1,68 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+  font-family: 'Droid Serif', serif;
+  padding: 10px;
+  color: lightgrey;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 20px;
+}
+
+.prj-btn, .prj-btn:hover, .prj-btn:active, .prj-btn:visited {
+    color: coral;
+    background-color: black;
+}
+
+.prj-btn:hover {
+    color: lime;
+}
+
+.panel-body {
+    font-size: 1.2em;
+}
+
+a, a:active, a:visited {
+    color: coral;
+}
+
+a:hover {
+    color: lime;
+}
+
+.panel {
+    padding: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    background-color: #300;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.anchor {
+  margin-bottom: 40px;
+}
+
+.row-padding {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.social {
+  text-decoration: none;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.desc {
+    text-align: justify;
+}

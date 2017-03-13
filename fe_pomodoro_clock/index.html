@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Expires" content="-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Pomodoro clock</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+
+        <link rel="stylesheet" href="rotation.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1 class="text-center">Pomodoro clock</h1>
+        <h3 class="text-center"><em>A Free Code Camp project</em></h3>
+            <div class="clock-frame">
+                <div class="vertical-middle">
+                    <div class="group">
+                        <div>Break:</div>
+                        <button id="break-plus" class="btn-symbol starting">+</button>
+                        <div id="break-length" class="minutes vertical-stretch"></div>
+                        <button id="break-minus" class="btn-symbol starting">-</button>
+                    </div>
+                    <div class="wrapper">
+                        <div id="clock" class="vertical-middle"><span id="clock-text"></span></div>
+                        <div id="spinnerID" class="spinner pie"></div>
+                        <div id="fillerID" class="filler pie"></div>
+                        <div id="maskID" class="mask"></div>
+                    </div>
+                    <div class="group">
+                        <div>Session:</div>
+                        <button id="session-plus" class="btn-symbol starting">+</button>
+                        <div id="session-length" class="minutes vertical-stretch"></div>
+                        <button id="session-minus" class="btn-symbol starting">-</button>
+                    </div>
+                </div>
+                <div class="vertical-middle">
+                    <button id="start" class="btn-word starting">Start</button>
+                    <button id="stop" class="btn-word">Stop</button>
+                    <button id="reset" class="btn-word starting">Reset</button>
+                    <button id="restart" class="btn-word starting">Restart</button>
+                </div>
+                <div class="vertical-middle">
+                    <button id="test" class="btn-word starting">Test (6/9s)</button>
+                </div>
+            </div>
+
+            <footer>Andes Signorelli - GitHub repositories:<br>
+                pomodoro clock project at <a href="https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_pomodoro_clock">
+                    https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_pomodoro_clock</a><br>
+                Free Code Camp projects at <a href="https://github.com/ansi62/free_code_camp">
+                    https://github.com/ansi62/free_code_camp</a>
+            </footer>
+
+        <audio id="sound" src="beep-02.wav"></audio>
+
+        <script src="include.js"></script>
+    </body>
+</html>

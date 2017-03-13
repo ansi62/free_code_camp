@@ -1,0 +1,151 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+  font-family: 'Droid Serif', serif;
+  padding: 10px;
+  color: lightgrey;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 20px;
+}
+
+a, a:active, a:visited {
+    color: coral;
+}
+
+a:hover {
+    color: lime;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+#calculator {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 6px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    background-color: coral;
+    color: black;
+    font-family: 'Electrolize', serif;
+    box-shadow: 6px 6px #bb4f30;
+}
+
+#logo {
+    font-size: 1.1em;
+    padding-bottom: 8px;
+    text-shadow: 2px 2px 2px lightgrey
+}
+
+#out {
+    border-radius: 6px;
+    padding: 4px;
+    box-shadow: -2px -2px darkgrey;
+    background-color: lightgrey;
+}
+
+#disp, #oper, #roll {
+    text-align: right;
+    width: 200px;
+    font-size: 1.4em;
+    border: none;
+    color: black;
+    font-family: 'Electrolize', serif;
+    background-color: lightgrey;
+}
+
+#oper {
+    font-size: 0.8em;
+}
+
+#roll {
+    display: inline-block;
+    font-size: 0.9em;
+    width: 240px;
+    height: 348px;
+    padding: 4px;
+    margin-top: 40px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+#disp:focus, #oper:focus {
+    outline: 0 !important;
+}
+
+td {
+    padding: 4px;
+    font-size: 1.2em;
+}
+
+.btnum, .btspec {
+    border: 1px solid darkgrey;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    font-size: 1.3em;
+    box-shadow: 2px 2px lightgrey;
+}
+
+.btspec {
+    background-color: #bb0000;
+    color: white;
+
+}
+
+.btnum:focus, .btspec:focus {
+    outline: 0 !important;
+}
+
+.btnum:active, .btspec:active {
+    box-shadow: 1px 1px lightgrey;
+    transform: translateX(1px) translateY(1px);
+}
+
+#zero {
+    width: 92px;
+}
+
+#equal {
+    height: 88px;
+}
+
+#arrows {
+    position: absolute;
+    border: 1px solid red;
+}
+
+#arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 400px solid transparent;
+  border-left: 700px solid #333333;
+  position: absolute;
+  left: 0px;
+  z-index: -10;
+}
+
+#arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 300px solid transparent;
+  border-bottom: 200px solid transparent;
+  border-right: 900px solid #222222;
+  position: absolute;
+  right: 0px;
+  z-index: -20;
+}

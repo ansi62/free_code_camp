@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Expires" content="-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Tic Tac Toe Game</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1 class="text-center">Tic Tac Toe Game</h1>
+        <h3 class="text-center"><em>A Free Code Camp project</em></h3>
+
+        <div class="container-fluid">
+            <div id="picker">
+                <img id="pickX" src="X.png"> <img id="pickO" src="O.png">
+            </div>
+            <table id="ttt">
+                <tr>
+                    <td><button id="b0" class="btn-ttt"></button></td>
+                    <td><button id="b1" class="btn-ttt"></button></td>
+                    <td><button id="b2" class="btn-ttt"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="b3" class="btn-ttt"></button></td>
+                    <td><button id="b4" class="btn-ttt"></button></td>
+                    <td><button id="b5" class="btn-ttt"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="b6" class="btn-ttt"></button></td>
+                    <td><button id="b7" class="btn-ttt"></button></td>
+                    <td><button id="b8" class="btn-ttt"></button></td>
+                </tr>
+            </table>
+            <p id="status-bar"></p>
+            <button id="btn-reset">Reset</button>
+        </div>
+
+        <footer>Andes Signorelli - GitHub repositories:<br>
+           tic tac toe game project at <a href="https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_tic_tac_toe_game">
+                https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_tic_tac_toe_game</a><br>
+            Free Code Camp projects at <a href="https://github.com/ansi62/free_code_camp">
+                https://github.com/ansi62/free_code_camp</a>
+        </footer>
+
+        <script src="include.js"></script>
+    </body>
+</html>

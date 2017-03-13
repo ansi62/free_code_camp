@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+  font-family: 'Droid Serif', serif;
+  padding: 2%;
+  color: lightgrey;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 20px;
+}
+
+a, a:active, a:visited {
+    color: coral;
+}
+
+a:hover {
+    color: lime;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.graybox {
+  margin: 4%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: lightgray;
+  color: black;
+  border-radius: 10px;
+}
+
+.photo {
+  background-color: white;
+  border-radius: 4px;
+  padding: 4px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  display: inline-block;
+  max-width: 90%;
+}
+.dida {
+  font-size: 16px;
+  font-style: italic;
+}
+p {
+  font-size: 18px;
+  text-align: justify;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+.wpedialink {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 8%;
+  margin-right: 8%;
+  color: lightgrey;
+  background-color: #222;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+}
+.note {
+  font-size: 12px;
+  text-align: center;
+}

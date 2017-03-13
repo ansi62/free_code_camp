@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+  font-family: 'Droid Serif', serif;
+  padding: 10px;
+  color: lightgrey;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 20px;
+}
+
+.logo {
+    border: none;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.ch, .ch:hover {
+    border-left: 4px solid darkcyan;
+    border-right: 4px solid darkcyan;
+    border-radius: 4px;
+    text-align: left;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    visibility: hidden;
+}
+
+.ch:hover {
+    border-left-color: cyan;
+    border-right-color: cyan;
+    background-color: #200000;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active  {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: coral;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.not-exists {
+    color: #990000;
+}
+
+
+footer a, footer a:active, footer a:visited {
+    color: coral;
+}
+
+footer a:hover {
+    color: lime;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}

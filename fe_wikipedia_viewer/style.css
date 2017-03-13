@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+  font-family: 'Droid Serif', serif;
+  padding: 10px;
+  color: lightgrey;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 20px;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+#search-result {
+    margin-top: 20px;
+}
+
+.entry-block, .entry-block:hover {
+    border-left: 4px solid darkcyan;
+    border-right: 4px solid darkcyan;
+    border-radius: 4px;
+    text-align: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.entry-block:hover {
+    border-left-color: cyan;
+    border-right-color: cyan;
+    background-color: #140000;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+.entry-title:link,
+.entry-title:visited,
+.entry-title:hover,
+.entry-title:active {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: coral;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover, .entry-title:hover {
+    text-decoration: underline;
+}
+
+.entry-snippet {
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: justify;
+}
+
+#query {
+    margin-right: 10px;
+}
+
+footer a, footer a:active, footer a:visited {
+    color: coral;
+}
+
+footer a:hover {
+    color: lime;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Quote machine</title>
+  </head>
+  <body>
+    <h1>Quote machine</h1>
+    <h3><em>A Free Code Camp project</em></h3>
+
+    <div id="box">
+      <p id="quote_text"></p>
+      <p id="quote_author"></p>
+      <p><button id="next_quote" class="btn">Next quote</button></p>
+      <p id="tw"><a id="tw_uri" href="#" class="button social" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></p>
+    </div>
+
+    <footer>Andes Signorelli - GitHub repositories:<br>
+       quote machine project at <a href="https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_quote_machine">
+            https://github.com/ansi62/free_code_camp/tree/gh-pages/fe_quote_machine</a><br>
+        Free Code Camp projects at <a href="https://github.com/ansi62/free_code_camp">
+            https://github.com/ansi62/free_code_camp</a>
+    </footer>
+  </body>
+  <script>
+    $(document).ready(function() {
+      function nextQuote() {
+        $.ajax("https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous", {
+          "headers": {
+            "X-Mashape-Key": "4qjmA01NsBmshzOq0J8onHRdJVIvp1AB2UPjsnloz1hossdez8",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Accept": "application/json"
+          },
+          "dataType": "json"
+        }).done(function(data, status, jqXHR) {
+            $("#quote_text").html(data.quote);
+            $("#quote_author").html(data.author);
+            var tw_uri = "https://twitter.com/intent/tweet?text=" +
+              encodeURIComponent('"' + data.quote + '"' + "\n" + data.author);
+              "&hashtags=quotes"
+            ;
+            $("#tw_uri").attr("href", tw_uri);
+          });
+      }
+
+      $("#next_quote").on("click", nextQuote);
+
+      nextQuote();
+    });
+  </script>
+</html>
